@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { Github } from "lucide-react";
 
 const stats = [
-  { label: "Repositories", value: "15+" },
-  { label: "Contributions", value: "200+" },
+  { label: "Repositories", value: "5+" },
+  { label: "Contributions", value: "3+" },
   { label: "Languages", value: "5+" },
-  { label: "Projects", value: "10+" },
+  { label: "Projects", value: "3" },
 ];
 
 const GitHubSection = () => {
@@ -50,7 +50,7 @@ const GitHubSection = () => {
             viewport={{ once: true }}
           >
             <a 
-              href="https://github.com/Shivanshdubey09" 
+              href="https://github.com/samirsingh6549-stack" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-all font-mono shadow-[0_0_15px_hsl(var(--primary)/0.3)] hover:shadow-[0_0_20px_hsl(var(--primary)/0.5)]"

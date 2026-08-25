@@ -6,72 +6,54 @@ const skillIcons: Record<string, string> = {
   "JavaScript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
   "C": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
   "C++": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
-  "C#": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
   "Java": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
   "Python": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-  "PHP": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
   "HTML5": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
   "CSS3": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-  "TypeScript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
   "React": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-  "Redux": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
   "Tailwind CSS": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-  "Bootstrap": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
   "Node.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-  "Express.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-  "Express": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-  "Laravel": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",
-  ".NET": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg",
-  "Apache": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg",
-  "MongoDB": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
   "MySQL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
   "PostgreSQL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-  "Microsoft SQL Server": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg",
+  "Windows": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg",
   "Git": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
   "GitHub": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-  "Linux": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
-  "Ubuntu": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg",
-  "Manjaro": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Manjaro-logo.svg",
-  "Netlify": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg",
   "Vercel": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
-  "NPM": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
-  "Nodemon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodemon/nodemon-original.svg",
-  "Render": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/render/render-original.svg",
   "Figma": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
   "Canva": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg",
   "VS Code": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
-  "Postman": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+  "IntelliJ IDEA": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg",
 };
 
 const skillCategories = [
   {
     title: "Languages",
-    skills: ["JavaScript", "C", "C++", "C#", "Java", "Python", "PHP", "HTML5", "CSS3"],
+    skills: ["JavaScript", "C", "C++", "Java", "Python", "HTML5", "CSS3"],
   },
   {
     title: "Frontend",
-    skills: ["React", "Redux", "Tailwind CSS", "HTML5", "CSS3"],
+    skills: ["React", "Tailwind CSS", "HTML5", "CSS3"],
   },
   {
     title: "Backend",
-    skills: ["Node.js", "Express.js", "Laravel", ".NET", "Apache", "JWT", "REST APIs"],
+    skills: ["Node.js", "REST APIs"],
   },
   {
     title: "Database",
-    skills: ["MongoDB", "MySQL", "PostgreSQL", "Microsoft SQL Server"],
+    skills: ["MySQL", "PostgreSQL"],
   },
   {
     title: "DevOps & OS",
-    skills: ["Linux", "Ubuntu", "Manjaro", "Git", "GitHub", "Netlify", "Vercel", "Render", "NPM", "Nodemon"],
+    skills: ["Windows", "Git", "GitHub", "Vercel"],
   },
   {
     title: "Design & Tools",
-    skills: ["Figma", "Canva", "VS Code", "Postman"],
+    skills: ["Figma", "Canva", "VS Code", "IntelliJ IDEA"],
   },
 ];
 
 const techStack = [
-  "React", "Node.js", "Express", "Laravel", "MongoDB", "JavaScript", "Tailwind CSS", "Python", "Linux", "Git", "GitHub"
+  "React", "Node.js", "JavaScript", "Tailwind CSS", "Python", "Git", "GitHub"
 ];
 
 const SkillBadge = ({ skill }: { skill: string }) => {

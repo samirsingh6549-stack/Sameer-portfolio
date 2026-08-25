@@ -7,54 +7,20 @@ import ProjectModal from "./ProjectModal";
 
 const projects = [
   {
-    title: "ExamGen AI",
-    description: "AI-powered exam paper generator using Gemini API with teacher authentication and smart question generation.",
-    longDescription: "ExamGen AI is a comprehensive exam paper generation platform that leverages Google's Gemini API to create intelligent, customized exam questions. The system features secure teacher authentication, allowing educators to generate exam papers tailored to specific topics, difficulty levels, and learning objectives. Built with a modern tech stack, it provides a seamless experience for creating, managing, and exporting professional exam papers with AI-generated questions that maintain academic rigor.",
+    title: "NyayaSetu",
+    description: "An AI-driven civic bridge empowering 1.4 billion citizens with free, multilingual legal drafting, RTI petitions, and welfare scheme navigation.",
+    longDescription: "NyayaSetu is an AI-powered legal and civic empowerment platform designed to democratize access to justice for Indian citizens. Powered by Next.js and Google Gemini AI, it enables anyone to draft statutory RTI applications, generate legally sound dispute notices, and discover eligible government welfare schemes for free. Supporting 12 Indian regional languages with instant court-compliant PDF downloads, NyayaSetu bridges the gap of expensive lawyer fees, complex legal jargon, and language barriers.",
     tech: ["React", "Node.js", "MongoDB", "Gemini API"],
     features: [
-      "AI-powered question generation using Gemini API",
-      "Teacher authentication and authorization system",
-      "Customizable exam templates and formats",
-      "MongoDB database for storing questions and exams",
-      "Export functionality for multiple formats",
-      "Topic-based question categorization"
+      "RTI Drafting Agent: Auto-generates formal Section 6(1) petitions with statutory citations, specific query framing, and BPL fee waivers.",
+      "Rights & Dispute Navigator: Drafts authoritative legal notices for consumer complaints, tenancy issues, unpaid salaries, and cyber/UPI fraud.",
+      "Welfare Scheme Autofill: Identifies matching Central & State welfare schemes and creates standardized application sheets for CSC centers.",
+      "Multilingual Access: Fully translates and formats documents in 12 Indian regional languages using native scripts.",
+      "Instant PDF Export & Presets: Produces official, multi-page downloadable PDFs with 1-click pre-loaded templates for immediate use."
     ],
-    github: "https://github.com/Shivanshdubey09",
-    liveDemo: "https://examgen-ai-demo.vercel.app",
-    image: "/examgen-ai.jpg",
-    featured: true,
-  },
-  {
-    title: "Automated Agriculture System",
-    description: "IoT-based smart farming system for irrigation automation and real-time environmental monitoring.",
-    longDescription: "An advanced IoT-based smart farming system designed to modernize agricultural practices. This project integrates automated irrigation control with real-time environmental monitoring to optimize water usage and crop health. Additionally, it features farmer assistance via chatbot integration, providing immediate, data-driven support and insights directly to users.",
-    tech: ["PHP", "JavaScript", "HTML", "CSS", "IoT"],
-    features: [
-      "Automated irrigation control system",
-      "Real-time environmental monitoring",
-      "Farmer assistance via chatbot integration"
-    ],
-    github: "https://github.com/Shivanshdubey09",
-    liveDemo: "#",
-    image: "/subhchintak-chatbot.jpg",
-    featured: true,
-  },
-  {
-    title: "FarmDirect",
-    description: "Bulk Agribusiness & AI Marketplace connecting sustainable farms directly with commercial buyers.",
-    longDescription: "FarmDirect is a state-of-the-art, bulk agricultural B2B marketplace designed to bypass middlemen and connect farmers directly with commercial buyers (restaurants, retail chains, food processors, and exporters). Blending sleek dark mode, bento-grid modules, and glassmorphism with highly robust backend architecture, the platform features a specialized dual-role dashboard, real-time message collaboration, and an AI price assistant to optimize procurement and trading efficiency.",
-    tech: ["Laravel 11", "MongoDB", "Tailwind CSS", "PHP"],
-    features: [
-      "Dual-role specialized dashboards for Farmers & Buyers",
-      "Mandi AI Price Assistant (FarmBot) for price evaluation",
-      "Real-time chat & messaging system between buyers and farmers",
-      "Intelligent crop image engine with Unsplash fallback",
-      "Bidding system and bulk harvest negotiations",
-      "Logistics progress tracking and PDF invoice generation"
-    ],
-    github: "https://github.com/Shivanshdubey09/FarmDirect",
-    liveDemo: "https://hellofarmdirect.onrender.com/",
-    image: "/farmdirect.png",
+    github: "https://github.com/samirsingh6549-stack/nyayasetu",
+    liveDemo: "https://nyayasetu-one.vercel.app/",
+    image: "/nyayasetu.png",
     featured: true,
   },
 ];
@@ -79,7 +45,7 @@ const Projects = () => {
             <div className="w-16 h-1 bg-primary mx-auto rounded-full" />
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className={`grid gap-6 mx-auto ${projects.length === 1 ? 'max-w-xl grid-cols-1' : projects.length === 2 ? 'max-w-4xl grid-cols-1 md:grid-cols-2' : 'max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3'}`}>
             {projects.map((project, i) => (
               <motion.div
                 key={project.title}

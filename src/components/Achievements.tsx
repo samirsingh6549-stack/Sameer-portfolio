@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Trophy, Code, Cpu, Globe, Zap } from "lucide-react";
 
 const achievements = [
-  { icon: Globe, text: "Built multiple full stack applications using MERN stack" },
+  { icon: Globe, text: "Built Three full stack applications using React and Node.js" },
   { icon: Cpu, text: "Developed AI powered tools using APIs" },
   { icon: Code, text: "Experience designing REST APIs" },
   { icon: Zap, text: "Strong JavaScript development knowledge" },

@@ -5,7 +5,7 @@ import { MapPin, GraduationCap, Code } from "lucide-react";
 
 const infoCards = [
   { icon: MapPin, label: "Location", value: "India" },
-  { icon: GraduationCap, label: "Education", value: "BTech CS (3rd Year)" },
+  { icon: GraduationCap, label: "Education", value: "BTech CS (2nd Year)" },
   { icon: Code, label: "Focus", value: "Full Stack Development" },
 ];
 
@@ -40,7 +40,7 @@ const About = () => {
                 <div className="w-full h-full rounded-2xl overflow-hidden border border-primary/20">
                   <img
                     src="/profile.jpeg"
-                    alt="Shivansh Dubey"
+                    alt="Sameer Kumar Singh"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -62,7 +62,7 @@ const About = () => {
               I am a dedicated Full Stack Developer with a strong foundation in both frontend interfaces and backend architecture. I thrive on the challenge of logical problem-solving and system design, constantly pushing the boundaries of what's possible on the web.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-10 text-base">
-              My expertise lies in developing scalable applications using the <span className="text-primary font-semibold">JavaScript ecosystem and MERN stack</span>. I am passionate about continuously sharpening my programming skills and delivering robust, high-performance solutions that create meaningful digital experiences.
+              My expertise lies in developing scalable applications using the <span className="text-primary font-semibold">JavaScript ecosystem, React, Node and MERN stack</span>. I am passionate about continuously sharpening my programming skills and delivering robust, high-performance solutions that create meaningful digital experiences.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {infoCards.map((card, i) => (

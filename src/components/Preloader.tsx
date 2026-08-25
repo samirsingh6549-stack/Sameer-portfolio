@@ -34,7 +34,7 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            Shivansh Dubey
+            Sameer Kumar Singh
           </motion.h1>
           <motion.p
             className="text-muted-foreground text-sm tracking-[0.4em] uppercase mb-12 font-mono"

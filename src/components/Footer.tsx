@@ -8,13 +8,13 @@ const Footer = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground font-mono">
-            © 2026 Shivansh Dubey. All rights reserved.
+            © 2026 Sameer Kumar Singh. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             {[
-              { icon: Github, href: "https://github.com/Shivanshdubey09" },
-              { icon: Linkedin, href: "https://www.linkedin.com/in/shiiivxnshh/" },
-              { icon: Mail, href: "mailto:shivanshdubey1009@gmail.com" },
+              { icon: Github, href: "https://github.com/samirsingh6549-stack" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/sameer-kumar-singh-a67b2526b" },
+              { icon: Mail, href: "mailto:samirsingh6549@gmail.com" },
             ].map((s, i) => (
               <a
                 key={i}

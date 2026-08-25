@@ -15,68 +15,36 @@ export interface Certification {
 
 const certificationsData: Certification[] = [
   {
-    title: "Privacy and Security in Online Social Media",
-    issuer: "NPTEL",
+    title: "Computer Programming",
+    issuer: "Neo Colab",
     issuerLogo: "N",
-    description: "Successfully completed this certification demonstrating practical knowledge and hands-on understanding.",
-    image: "/privacy-security.png",
-    link: "https://drive.google.com/file/d/1dQiRdFM0S0cFo1xmJxL8kllQEkxPZVt9/view?usp=sharing"
+    description: "Demonstrated strong commitment, consistency, and excellence throughout the 150-hour computer programming course.",
+    image: "/cert-neocolab.png",
+    link: "https://drive.google.com/file/d/1LeXnpyc-pbVgyNdwtFL3rQdxg4DX8hxb/view?usp=sharing"
   },
   {
-    title: "Computational Theory: Language Principle & Finite Automata Theory",
+    title: "C++ Programming",
+    issuer: "Saylor Academy",
+    issuerLogo: "S",
+    description: "Successfully completed CS107: C++ Programming with a 90.00% grade covering data structures, OOP, and algorithms.",
+    image: "/cert-cpp.png",
+    link: "https://drive.google.com/file/d/10rfFhW7BuRv3gBql3YIvzqZL1VGBpM6-/view?usp=sharing"
+  },
+  {
+    title: "Leadership Fundamentals",
+    issuer: "EduTech Hub",
+    issuerLogo: "E",
+    description: "Successfully completed comprehensive coursework on leadership fundamentals and team management.",
+    image: "/cert-leadership.png",
+    link: "https://drive.google.com/file/d/1WTvwtJiKq9WSVt_ZsrhdFYPGLC-Pjpgd/view?usp=sharing"
+  },
+  {
+    title: "Introduction to Cyber Security",
     issuer: "Infosys Springboard",
     issuerLogo: "I",
-    description: "Successfully completed this certification demonstrating practical knowledge and hands-on understanding.",
-    image: "/automata.png",
-    link: "https://drive.google.com/file/d/1P_y59O2TzNryfnnEEZIh5MInWuSuehXY/view?usp=sharing"
-  },
-  {
-    title: "ChatGPT-4 Prompt Engineering: ChatGPT, Generative AI & LLM",
-    issuer: "Infosys Springboard",
-    issuerLogo: "I",
-    description: "Successfully completed this certification demonstrating practical knowledge and hands-on understanding.",
-    image: "/prompt-engineering.png",
-    link: "https://drive.google.com/file/d/1dCmICH4nzKptMPoBDtFg9v00kymjp9MX/view?usp=sharing"
-  },
-  {
-    title: "Master Generative AI & Generative AI Tools (ChatGPT & more)",
-    issuer: "Infosys Springboard",
-    issuerLogo: "I",
-    description: "Successfully completed this certification demonstrating practical knowledge and hands-on understanding.",
-    image: "/genai-master.png",
-    link: "https://drive.google.com/file/d/12GXclTDlSeYzIF2Yarl6-yoRdpbbO1-I/view?usp=sharing"
-  },
-  {
-    title: "Build Generative AI Apps and Solutions with No-Code Tools",
-    issuer: "Infosys Springboard",
-    issuerLogo: "I",
-    description: "Successfully completed this certification demonstrating practical knowledge and hands-on understanding.",
-    image: "/no-code-ai.png",
-    link: "https://drive.google.com/file/d/1wnGuj5LsZaixcCCJze8XYSO0FHD7IIwb/view?usp=sharing"
-  },
-  {
-    title: "Accenture Social Media Certification",
-    issuer: "FutureLearn",
-    issuerLogo: "F",
-    description: "Successfully completed this certification demonstrating practical knowledge and hands-on understanding.",
-    image: "/accenture-socialmedia.png",
-    link: "https://drive.google.com/file/d/1Az8wguYrVMHozEYG6kSmPwyk8bazu1F7/view?usp=sharing"
-  },
-  {
-    title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
-    issuer: "Oracle",
-    issuerLogo: "O",
-    description: "Demonstrated fundamental knowledge of Artificial Intelligence and Machine Learning concepts and OCI AI services.",
-    image: "/oracle-ai.png",
-    link: "https://drive.google.com/file/d/1bc4eR0udsrJfN7Fw6KlaK-YjvFUgvg-X/view?usp=sharing"
-  },
-  {
-    title: "Oracle Data Platform 2025 Certified Foundations Associate",
-    issuer: "Oracle",
-    issuerLogo: "O",
-    description: "Demonstrated foundational knowledge of Oracle Data Platform services, data management, and database concepts.",
-    image: "/oracle-data.png",
-    link: "https://drive.google.com/file/d/12qatBKCjKGWhsptzx1XIEf6kXKiR6nUH/view?usp=sharing"
+    description: "Completed foundation training in cyber security principles, network defenses, and threat analysis.",
+    image: "/cert-cybersecurity.png",
+    link: "https://drive.google.com/file/d/1ufYRdmVBgc4gX69zH8Ke942AQQMYy4iv/view?usp=sharing"
   }
 ];
 
@@ -99,7 +67,7 @@ const Certifications = () => {
           </motion.div>
 
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-10 max-w-4xl mx-auto">
               {certificationsData.map((cert, i) => (
                 <motion.div
                   key={cert.title}
@@ -114,10 +82,10 @@ const Certifications = () => {
                   <div>
                     <div className="flex items-center gap-2 mb-4">
                       <div className={`w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold text-white ${
-                        cert.issuer.toLowerCase() === 'nptel' ? 'bg-amber-600' :
-                        cert.issuer.toLowerCase() === 'infosys springboard' ? 'bg-blue-600' :
-                        cert.issuer.toLowerCase() === 'futurelearn' ? 'bg-pink-600' :
-                        cert.issuer.toLowerCase() === 'oracle' ? 'bg-red-700' : 'bg-primary'
+                        cert.issuer.toLowerCase().includes('neo colab') ? 'bg-amber-600' :
+                        cert.issuer.toLowerCase().includes('saylor') ? 'bg-blue-600' :
+                        cert.issuer.toLowerCase().includes('edutech') ? 'bg-emerald-600' :
+                        cert.issuer.toLowerCase().includes('infosys') ? 'bg-indigo-600' : 'bg-primary'
                       }`}>
                         {cert.issuerLogo}
                       </div>

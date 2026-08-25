@@ -8,15 +8,15 @@ const education = [
     degree: "Bachelor of Technology – Computer Science Engineering",
     institution: "Lovely Professional University",
     location: "Jalandhar, Punjab",
-    period: "Aug 2023 – Present",
-    cgpa: "CGPA: 6.92",
+    period: "Aug 2024 – Present",
+    cgpa: "CGPA: 8.4",
     description:
-      "Pursuing BTech in CSE with specialization in Full Stack Web Development. Built a strong foundation in Data Structures, Web Technologies, and Software Development using React, Node.js, and MongoDB.",
+      "Pursuing BTech in CSE. Built a strong foundation in Data Structures, Web Technologies, and Software Development using React, Node.js.",
   },
   {
     degree: "Higher Secondary Education",
-    institution: "St. Xavier's Public School",
-    location: "Korba, Chhattisgarh",
+    institution: "Anugrah Narayan College",
+    location: "Patna, Bihar",
     period: "Completed",
     description:
       "Completed higher secondary education with a focus on Science and Mathematics, building a strong analytical foundation.",

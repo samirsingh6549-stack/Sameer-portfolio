@@ -4,9 +4,8 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useState, useEffect } from "react";
 
 const roles = [
-  "MERN Stack Developer",
-  "Frontend Developer",
-  "Full Stack Web Developer",
+  "Full-Stack Developer",
+  "Software Engineer",
 ];
 
 export default function Overlay() {
@@ -62,7 +61,7 @@ export default function Overlay() {
         </p>
         <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-[1.1] drop-shadow-[0_4px_25px_rgba(0,0,0,1)] text-center">
           Hi, I'm{" "}
-          <span className="text-gradient">Shivansh</span>
+          <span className="text-gradient">Sameer</span>
         </h1>
         <div className="text-xl md:text-3xl mb-8 h-10 font-display drop-shadow-[0_4px_15px_rgba(0,0,0,1)]">
           <span className="text-foreground">I'm a </span>
@@ -96,7 +95,7 @@ export default function Overlay() {
         style={{ opacity: opacity3, y: y3 }}
       >
         <h2 className="font-display text-4xl md:text-7xl font-bold text-white tracking-tighter drop-shadow-[0_4px_25px_rgba(0,0,0,0.8)] max-w-2xl text-right leading-[1.1]">
-          Passionate about the <span className="text-gradient drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]">MERN</span> stack.
+          Building <span className="text-gradient drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]">projects</span>, mastering algorithms, and creating impactful digital experiences.
         </h2>
       </motion.div>
       

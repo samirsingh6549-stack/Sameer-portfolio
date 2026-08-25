@@ -5,9 +5,9 @@ import { useState } from "react";
 import { Mail, Github, Linkedin, Send, Download } from "lucide-react";
 
 const socials = [
-  { icon: Github, label: "GitHub", href: "https://github.com/Shivanshdubey09" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/shiiivxnshh/" },
-  { icon: Mail, label: "Email", href: "mailto:shivanshdubey1009@gmail.com" },
+  { icon: Github, label: "GitHub", href: "https://github.com/samirsingh6549-stack" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/sameer-kumar-singh-a67b2526b" },
+  { icon: Mail, label: "Email", href: "mailto:samirsingh6549@gmail.com" },
 ];
 
 const Contact = () => {
@@ -15,7 +15,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    window.location.href = `mailto:shivanshdubey1009@gmail.com?subject=Portfolio Contact from ${form.name}&body=${form.message}%0A%0AFrom: ${form.email}`;
+    window.location.href = `mailto:samirsingh6549@gmail.com?subject=Portfolio Contact from ${form.name}&body=${form.message}%0A%0AFrom: ${form.email}`;
   };
 
   return (
@@ -90,8 +90,8 @@ const Contact = () => {
               <p className="text-muted-foreground text-sm mb-5">Get a copy of my latest resume</p>
               
               <a 
-                href="https://drive.google.com/file/d/1iV0tXPgj8AYlkx9NOebEUZ3HtyzAE17L/view?usp=sharing" 
-                target="_blank"
+                href="https://1drv.ms/w/c/a2892c312a754f8a/IQDfixtjGxtoQKrH1PMU0rNnARogKionlp1NuOHzCgkqisw?e=HpqzDD" 
+                target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-2 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/10 transition-all"
               >

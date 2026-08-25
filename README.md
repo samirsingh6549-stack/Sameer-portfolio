@@ -70,7 +70,7 @@ Sameer-portfolio/
    ```
 
 5. **Open your browser:**
-   Navigate to [http://localhost:3000](http://localhost:3000) to view the project locally!
+   Navigate to [https://sameerkumarsingh-portfolio.vercel.app/](https://sameerkumarsingh-portfolio.vercel.app/) to view the project locally!
 
 ---
 <div align="center">

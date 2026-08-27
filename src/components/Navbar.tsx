@@ -35,9 +35,21 @@ export default function Navbar() {
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
       >
-        {/* We center the navbar links on desktop since the logo is omitted as requested */}
-        <div className="container mx-auto px-6 h-20 flex items-center justify-end md:justify-center relative">
+        <div className="container mx-auto px-6 h-20 flex items-center justify-between relative">
           
+          {/* Brand Logo */}
+          <a 
+            href="#" 
+            className="font-display font-black text-2xl tracking-wider text-[#FFD700] hover:scale-105 transition-transform flex items-center gap-2.5 group"
+          >
+            <div className="w-8 h-8 rounded-full overflow-hidden border border-primary/40 group-hover:border-primary group-hover:shadow-[0_0_10px_hsl(var(--primary)/0.5)] transition-all bg-white flex items-center justify-center p-0.5">
+              <img src="/logo.png" alt="SKS Logo" className="w-full h-full object-contain" />
+            </div>
+            <span className="text-primary group-hover:drop-shadow-[0_0_15px_hsl(var(--primary)/0.6)] transition-all">
+              SKS
+            </span>
+          </a>
+
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (

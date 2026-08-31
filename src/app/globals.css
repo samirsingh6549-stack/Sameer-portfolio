@@ -4,6 +4,36 @@
 
 @layer base {
   :root {
+    /* Light Mode Variables */
+    --background: 0 0% 98%;
+    --foreground: 224 25% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 25% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 25% 12%;
+    --primary: 42 96% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 35 90% 40%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 20% 94%;
+    --muted-foreground: 220 10% 45%;
+    --accent: 42 96% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 88%;
+    --input: 220 13% 88%;
+    --ring: 42 96% 45%;
+    --radius: 0.75rem;
+
+    --glow-yellow: 42 96% 45%;
+    --glow-amber: 35 90% 40%;
+    --glass-bg: 0 0% 100%;
+    --glass-border: 220 13% 86%;
+  }
+
+  .dark {
+    /* Dark Mode Variables (Default) */
     --background: 0 0% 4%;
     --foreground: 45 10% 90%;
     --card: 0 0% 7%;
@@ -38,7 +68,7 @@
   body {
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
-    @apply font-sans;
+    @apply font-sans transition-colors duration-300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -50,13 +80,13 @@
 
 @layer components {
   .glass-card {
-    @apply bg-card/50 backdrop-blur-xl border border-border/50 rounded-xl;
+    @apply bg-card/70 backdrop-blur-xl border border-border/60 rounded-xl transition-colors duration-300 shadow-sm dark:shadow-none;
   }
   .glow-text {
     @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
   }
   .glow-hover {
-    @apply transition-all duration-300 hover:shadow-[0_0_30px_hsl(var(--primary)/0.2)] hover:border-primary/40;
+    @apply transition-all duration-300 hover:shadow-[0_0_25px_hsl(var(--primary)/0.2)] hover:border-primary/40;
   }
   .section-padding {
     @apply py-20 md:py-28 scroll-mt-20;

@@ -30,33 +30,21 @@ export default function Navbar() {
   return (
     <>
       <motion.header 
-        className="fixed top-0 left-0 right-0 z-[100] transition-colors duration-300 bg-transparent"
+        className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${scrolled ? 'bg-background/80 backdrop-blur-lg border-b border-border/40 shadow-sm' : 'bg-transparent'}`}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
       >
-        <div className="container mx-auto px-6 h-20 flex items-center justify-between relative">
+        {/* We center the navbar links on desktop since the logo is omitted as requested */}
+        <div className="container mx-auto px-6 h-20 flex items-center justify-end md:justify-center relative">
           
-          {/* Brand Logo */}
-          <a 
-            href="#" 
-            className="font-display font-black text-2xl tracking-wider text-[#FFD700] hover:scale-105 transition-transform flex items-center gap-2.5 group"
-          >
-            <div className="w-8 h-8 rounded-full overflow-hidden border border-primary/40 group-hover:border-primary group-hover:shadow-[0_0_10px_hsl(var(--primary)/0.5)] transition-all bg-white flex items-center justify-center p-0.5">
-              <img src="/logo.png" alt="SKS Logo" className="w-full h-full object-contain" />
-            </div>
-            <span className="text-primary group-hover:drop-shadow-[0_0_15px_hsl(var(--primary)/0.6)] transition-all">
-              SKS
-            </span>
-          </a>
-
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <a 
                 key={link.name}
                 href={link.href}
-                className="text-sm font-mono tracking-widest text-white/70 hover:text-primary hover:scale-105 transition-all"
+                className="text-sm font-mono tracking-widest text-foreground/80 hover:text-primary hover:scale-105 transition-all drop-shadow-sm"
               >
                 {link.name}
               </a>
@@ -65,7 +53,7 @@ export default function Navbar() {
           
           {/* Mobile Menu Toggle */}
           <button 
-            className="md:hidden text-white/70 hover:text-primary transition-colors focus:outline-none"
+            className="md:hidden text-foreground/80 hover:text-primary transition-colors focus:outline-none"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? (
@@ -79,7 +67,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Dropdown */}
       <motion.div
-        className={`fixed inset-0 z-[90] bg-background/95 backdrop-blur-xl md:hidden flex flex-col items-center justify-center border-b border-white/10 ${mobileMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}
+        className={`fixed inset-0 z-[90] bg-background/95 backdrop-blur-xl md:hidden flex flex-col items-center justify-center border-b border-border/40 ${mobileMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}
         initial={false}
         animate={{ opacity: mobileMenuOpen ? 1 : 0, y: mobileMenuOpen ? 0 : -20 }}
         transition={{ duration: 0.3 }}
@@ -90,7 +78,7 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               onClick={() => setMobileMenuOpen(false)}
-              className="text-2xl font-display font-medium text-white/90 hover:text-primary transition-colors"
+              className="text-2xl font-display font-medium text-foreground/90 hover:text-primary transition-colors"
             >
               {link.name}
             </a>

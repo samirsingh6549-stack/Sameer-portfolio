@@ -1,14 +1,27 @@
+'use client';
+
 import { Github, Linkedin, Mail } from "lucide-react";
+import { useTheme } from "@/context/ThemeContext";
 
 const Footer = () => {
+  const { toggleTheme } = useTheme();
+
   return (
-    <footer className="border-t border-border/30 py-8 relative overflow-hidden bg-background z-20">
+    <footer className="border-t border-border/40 py-8 relative overflow-hidden bg-background z-20 transition-colors duration-300">
       <div className="absolute top-0 left-1/3 w-40 h-40 bg-primary/5 rounded-full blur-[80px]" />
       <div className="absolute bottom-0 right-1/4 w-32 h-32 bg-accent/5 rounded-full blur-[60px]" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground font-mono">
-            © 2026 Sameer Kumar Singh. All rights reserved.
+          <p className="text-sm text-muted-foreground font-mono flex items-center">
+            <span>© 2026 Sameer Kumar Singh. All rights reserved</span>
+            <button
+              onClick={toggleTheme}
+              className="inline-block cursor-pointer opacity-40 hover:opacity-100 hover:text-primary transition-all px-0.5 focus:outline-none"
+              title="Toggle theme (Alt+T)"
+              aria-label="Toggle theme"
+            >
+              .
+            </button>
           </p>
           <div className="flex items-center gap-4">
             {[

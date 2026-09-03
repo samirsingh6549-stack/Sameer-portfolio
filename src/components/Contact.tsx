@@ -90,7 +90,7 @@ const Contact = () => {
               <p className="text-muted-foreground text-sm mb-5">Get a copy of my latest resume</p>
               
               <a 
-                href="https://1drv.ms/w/c/a2892c312a754f8a/IQDfixtjGxtoQKrH1PMU0rNnARogKionlp1NuOHzCgkqisw?e=HpqzDD" 
+                href="https://drive.google.com/file/d/1HbrCs_QTQQPoxsF5ChgoZ6UFET4_jmSm/view?usp=sharing" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-2 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/10 transition-all"
